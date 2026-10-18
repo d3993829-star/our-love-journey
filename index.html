@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Love Journey 💙</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #eaf5ff, #ffffff, #d6eaff);
+      color: #24466b;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    .card {
+      width: min(90%, 460px);
+      padding: 40px 25px;
+      background: rgba(255, 255, 255, 0.88);
+      border: 1px solid #d3e7ff;
+      border-radius: 28px;
+      box-shadow: 0 12px 35px rgba(69, 126, 184, 0.15);
+    }
+
+    .heart {
+      font-size: 65px;
+      animation: float 2s ease-in-out infinite;
+    }
+
+    h1 {
+      color: #397bb8;
+      font-size: 32px;
+      margin: 18px 0 10px;
+    }
+
+    .subtitle {
+      color: #6d8eae;
+      line-height: 1.7;
+      font-size: 15px;
+    }
+
+    .divider {
+      width: 65px;
+      height: 3px;
+      background: #a9d4ff;
+      margin: 24px auto;
+      border-radius: 10px;
+    }
+
+    button {
+      border: none;
+      border-radius: 30px;
+      background: #5598d5;
+      color: white;
+      padding: 15px 25px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    button:hover {
+      background: #347bb9;
+      transform: translateY(-2px);
+    }
+
+    .note {
+      margin-top: 25px;
+      color: #8ba8c5;
+      font-size: 12px;
+    }
+
+    #message {
+      display: none;
+      margin-top: 22px;
+      line-height: 1.8;
+      color: #397bb8;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="card">
+    <div class="heart">💙</div>
+
+    <h1>Our Love Journey</h1>
+
+    <p class="subtitle">
+      Two Hearts, One Journey.<br>
+      Walaupun berjauhan, kita tetap bisa
+      menciptakan cerita bersama.
+    </p>
+
+    <div class="divider"></div>
+
+    <p class="subtitle">
+      Hai, Adek & Abang! 🥰<br>
+      Siap memulai petualangan kecil kita?
+    </p>
+
+    <button id="startButton">
+      START OUR JOURNEY 💙
+    </button>
+
+    <div id="message">
+      <h2>Yeay, perjalanan kita dimulai! 🎲</h2>
+      <p>
+        Satu langkah, satu cerita,<br>
+        dan banyak kenangan untuk kita buat bersama. 🤍
+      </p>
+      <p>Our journey starts here! 💙</p>
+    </div>
+
+    <p class="note">Made with love, just for us ♡</p>
+  </main>
+
+  <script>
+    const button = document.getElementById("startButton");
+    const message = document.getElementById("message");
+
+    button.addEventListener("click", function () {
+      message.style.display = "block";
+      button.textContent = "OUR JOURNEY BEGINS 💙";
+      button.disabled = true;
+    });
+  </script>
+</body>
+</html>
